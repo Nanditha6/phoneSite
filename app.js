@@ -85,6 +85,7 @@ const PRODUCTS = [
 ];
 
 var app = express();
+const port = process.env.PORT || 5000;
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     next();
@@ -100,6 +101,6 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname + '/client/build/index.html'))
 });
 
-app.listen(5000, function () {
+app.listen(port, function () {
     console.log('Port running at 5000!');
 });
