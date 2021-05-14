@@ -90,18 +90,16 @@ app.use(function(req, res, next) {
     next();
 });
 
-app.get('/', (req, res) => {
+app.get('/allProducts', (req, res) => {
 	res.send(PRODUCTS);
 });
 
-app.listen(8080, function () {
-    console.log('Port running at 8080!');
-});
+app.use(express.static(path.join(__dirname, 'client/build')));
 
-
-// Serve static files from the React frontend app
-app.use(express.static(path.join(__dirname, 'client/build')))
-// Anything that doesn't match the above, send back index.html
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname + '/client/build/index.html'))
-})
+});
+
+app.listen(5000, function () {
+    console.log('Port running at 5000!');
+});
