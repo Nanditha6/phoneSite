@@ -1,0 +1,22 @@
+.list-item{
+    transition: transform 0.5s;
+    // height: 390px;
+
+    &:hover{
+        transform: scale(1.02);
+        box-shadow: 2px 2px 42px 0.4px #eae9e9;
+        cursor: pointer;
+    }
+
+    // &-image {
+        
+    // }
+
+    &-name {
+        font-size: 16px;
+    }
+
+    &-price {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,12 @@
+.bg-black {
+    background: #000000;
+}
+
+.nav-item {
+    font-family: 'Quicksand-Light';
+
+    &:hover{
+        font-family: 'Quicksand-Bold';
+    }
+}
+

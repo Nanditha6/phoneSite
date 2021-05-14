@@ -1,0 +1,18 @@
+.btn {
+    border-radius: 0;
+}
+
+.hero-image {
+    background-color: #ccc;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &-info {
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+    }
+  }
+  
+
+  
