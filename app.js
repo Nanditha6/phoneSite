@@ -1,4 +1,5 @@
 var express = require('express');
+const path = require('path');
 
 const PRODUCTS = [
     {
@@ -96,3 +97,11 @@ app.get('/', (req, res) => {
 app.listen(8080, function () {
     console.log('Port running at 8080!');
 });
+
+
+// Serve static files from the React frontend app
+app.use(express.static(path.join(__dirname, 'client/build')))
+// Anything that doesn't match the above, send back index.html
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname + '/client/build/index.html'))
+})
