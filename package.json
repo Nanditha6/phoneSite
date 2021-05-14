@@ -1,0 +1,17 @@
+{
+  "name": "mongotry",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "cd server && node app.js",
+    "client": "cd client && npm start",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.6.6"
+  }
+}
