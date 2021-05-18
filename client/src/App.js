@@ -6,12 +6,14 @@ import $ from 'jquery';
 import Navbar from "./components/common/Navbar/Navbar";
 import { MENU_ITEMS } from "./components/Constants";
 import List from "./components/Pages/List/List";
+import Description from "./components/Pages/Description/Description";
 
 function App() {
     return (
     <>
         <Router>
             <Switch>
+                <Route path="/product" component={Description} />
                 <Route path="/list" component={List} />
                 <Route path="/" component={Home} />
             </Switch>

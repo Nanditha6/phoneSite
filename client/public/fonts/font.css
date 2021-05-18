@@ -9,11 +9,6 @@
 }
 
 @font-face {
-    font-family: 'Quicksand-Italics';
-    src: url('Quicksand-Italic.ttf');
-}
-
-@font-face {
     font-family: 'Quicksand-Bold';
     src: url('Quicksand-Bold.ttf');
 }
@@ -29,4 +24,8 @@
 
 .medium {
     font-family: 'Quicksand-Medium', sans-serif;
+}
+
+.light {
+    font-family: 'Quicksand-Light', sans-serif;
 }

@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
 import "./ProductPreview.scss";
 
 const ProductPreview = (props) => {
     return (
         <div className="list-item col-6 col-lg-3 col-md-4 mt-4 pb-2">
+            <Link to="/product">
             <div className="list-item-image mt-3">
                 <img
                     className="img-fluid"
@@ -18,6 +20,7 @@ const ProductPreview = (props) => {
                     {props.product.price}
                 </div>
             </div>
+            </Link>
         </div>
     );
 };
